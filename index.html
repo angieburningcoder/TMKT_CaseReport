@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>任天堂漲價個案</title>
-<meta name="description" content="清大科管所科技行銷個案分析：任天堂 Switch 2 漲價">
+<meta name="description" content="清大科管所科技行銷個案分析：任天堂 Switch 2 報告分工">
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;700&family=Noto+Serif+TC:wght@600;700&display=swap">
 <style>
@@ -58,6 +58,12 @@ tr:last-child td{border-bottom:0}td.nw,th.nw{white-space:nowrap}td.num,th.num{fo
 .check{list-style:none;padding:0}.check li{padding-left:26px;position:relative}
 .check li::before{content:"";position:absolute;left:2px;top:7px;width:13px;height:13px;border:1.5px solid var(--steel);border-radius:3px}
 .src li{font-size:14.5px}
+h4{font-size:14px;margin:0 0 4px;color:var(--muted);font-weight:700}
+.owner{margin:-4px 0 14px}.who{display:inline-block;font-size:14px;font-weight:700;color:var(--bg2);background:var(--red);border-radius:999px;padding:2px 14px}
+.res{background:var(--bg2);border:1px solid var(--line);border-radius:12px;padding:12px 16px;margin:16px 0}.res ul{margin:0}.res li{font-size:14.5px}
+table.tight{min-width:0}h3[id]{scroll-margin-top:16px}
+.chain.five{grid-template-columns:repeat(5,minmax(0,1fr))}
+@media (max-width:640px){.chain.five{grid-template-columns:repeat(2,minmax(0,1fr))}.chain.five li:nth-child(odd)::before{display:none}}
 footer{color:var(--muted);font-size:13px;border-top:1px solid var(--line);padding-block:22px 44px}
 :focus-visible{outline:2px solid var(--red);outline-offset:2px}
 @media (max-width:640px){body{font-size:15px}.hero .wrap{padding-block:42px 26px}.story{grid-template-columns:repeat(2,minmax(0,1fr))}.chain{grid-template-columns:repeat(2,minmax(0,1fr))}.chain li:nth-child(3)::before{display:none}th,td{padding:8px 10px}}
@@ -67,17 +73,15 @@ footer{color:var(--muted);font-size:13px;border-top:1px solid var(--line);paddin
 <body>
 <header class="hero"><div class="wrap">
 <span class="eyebrow">清大科管所｜科技行銷 個案分析</span>
-<h1>任天堂 Switch 2：漲價 $50 之後，下一批人為什麼要買？</h1>
-<p class="meta">四人報告架構與分工｜15 分鐘｜更新日期：2026-11-05｜範圍：美國市場</p>
+<h1>任天堂 Switch 2：漲價之後，觀望的人為什麼要買？</h1>
+<p class="meta">四人報告分工｜15 分鐘｜更新日期：2026-11-05｜範圍：美國市場</p>
 </div></header>
 
 <div class="wrap">
-<nav class="toc" aria-label="本頁目錄">
-<a href="#story">個案故事</a><a href="#team">四人分工</a><a href="#line">分析主線</a><a href="#b">B 需求</a><a href="#c">C 定價</a><a href="#d">D 建議</a><a href="#voice">自製資料</a><a href="#fix">資料核對</a><a href="#todo">待確認</a><a href="#sources">來源</a>
-</nav>
+<nav class="toc" aria-label="本頁目錄"><a href="#team">誰負責哪裡</a><a href="#a">Part A 公司簡介</a><a href="#b">Part B 問題診斷</a><a href="#c">Part C 挑短期問題</a><a href="#d">Part D 三個 Solution</a><a href="#shared">共用資料</a></nav>
 
 <main>
-<p class="lead"><strong>建議主軸：</strong>$50 不是真正的問題。9 月美國買家實付只多 2%，銷量卻跌 14%；同月 PS5 實付多 17%，銷量反而漲 22%。鐵粉已經買了，任天堂要回答的是：不能降價時，用什麼理由把還在 Switch 1 上的人帶過來。</p>
+<p class="lead"><strong>報告主軸：</strong>Switch 2 的短期問題是觀望的人缺少購買理由。價格和記憶體成本短期動不了，所以我們從 <strong>Promotion、Place、Product</strong> 各提一個解法。</p>
 
 <h2 id="story">個案故事：賣得最快的主機，為什麼第二年要漲價？</h2>
 <div class="story">
@@ -89,60 +93,60 @@ footer{color:var(--muted);font-size:13px;border-top:1px solid var(--line);paddin
 <article class="panel"><svg viewBox="0 0 240 136" role="img" aria-label="失守：9 月 PS5 +22% 站上第一，Switch 2 −14%，Xbox −27%"><line x1="8" x2="232" y1="128" y2="128" stroke="var(--soft)" stroke-width="1.4"/><rect x="92" y="90" width="56" height="38" fill="var(--steel)" fill-opacity=".3" stroke="var(--steel)" stroke-width="1.4"/><rect x="148" y="106" width="56" height="22" fill="var(--red)" fill-opacity=".14" stroke="var(--red)" stroke-width="1.4"/><rect x="36" y="114" width="56" height="14" fill="var(--line)" stroke="var(--axis)" stroke-width="1.4"/><text x="120" y="114" font-size="14" font-weight="700" fill="var(--steel)" text-anchor="middle">1</text><text x="176" y="122" font-size="13" font-weight="700" fill="var(--red)" text-anchor="middle">2</text><g fill="none" stroke="var(--steel)" stroke-width="2.2" stroke-linecap="round"><circle cx="120" cy="40" r="7"/><path d="M120 47V70M120 53L108 38M120 53L132 38M120 70L111 90M120 70L129 90"/></g><g fill="none" stroke="var(--red)" stroke-width="2.2" stroke-linecap="round"><circle cx="176" cy="56" r="7"/><path d="M176 63V86M176 69L166 83M176 69L186 83M176 86L167 106M176 86L185 106"/></g><g fill="none" stroke="var(--muted)" stroke-width="2.2" stroke-linecap="round"><circle cx="64" cy="64" r="7"/><path d="M64 71V94M64 77L54 91M64 77L74 91M64 94L55 114M64 94L73 114"/></g><text x="120" y="24" font-size="13" font-weight="700" fill="var(--steel)" text-anchor="middle">PS5 +22%</text><text x="190" y="44" font-size="12" font-weight="700" fill="var(--red)" text-anchor="middle">Switch 2 −14%</text><text x="62" y="50" font-size="12" font-weight="700" fill="var(--muted)" text-anchor="middle">Xbox −27%</text></svg><p class="panel-t"><b>6</b>失守</p><p class="panel-d">9 月美國銷量下滑，PS5 靠 Wolverine 拿下月度銷量與金額第一</p></article>
 </div>
 
-<h2 id="team">四人分工（15 分鐘）</h2>
-<div class="timebar" aria-label="四段時間">
-<div><b>A</b>3'</div><div><b>B</b>4'</div><div><b>C</b>4'</div><div><b>D</b>4'（含 30 秒緩衝）</div>
-</div>
-<div class="table-wrap"><table>
-<thead><tr><th class="nw">組員</th><th class="nw">段落</th><th>要讓台下記住</th><th>要查、要做</th><th class="nw">頁數</th></tr></thead>
+<h2 id="team">誰負責哪裡</h2>
+<div class="table-wrap"><table class="tight">
+<thead><tr><th>Part（點擊前往）</th><th>負責</th><th>內容</th></tr></thead>
 <tbody>
-<tr><td class="nw"><strong>A</strong> ＿＿＿</td><td class="nw">案情與問題</td><td>賣得最快，第二年卻預告下滑</td><td>六格故事；公司商業模式；一句話問題；<strong>納入今天的半年財報</strong></td><td class="num">3</td></tr>
-<tr><td class="nw"><strong>B</strong> ＿＿＿</td><td class="nw">需求診斷</td><td>買氣跟著遊戲走，鐵粉之後的人還沒被說服</td><td>領先幅度圖；9 月三家比較；客群分析；<strong>Reddit 評論分析</strong>（見下）</td><td class="num">4</td></tr>
-<tr><td class="nw"><strong>C</strong> ＿＿＿</td><td class="nw">定價決策</td><td>任天堂選了哪條路、付出什麼代價</td><td>成本算式；價格階梯；決策選項表；與 PS5、Xbox 的溝通比較</td><td class="num">4</td></tr>
-<tr><td class="nw"><strong>D</strong> ＿＿＿</td><td class="nw">建議與總結</td><td>如果我們是任天堂，假期季怎麼做</td><td>STP 與 4P；SMART 目標；風險；討論題；<strong>合併投影片與計時彩排</strong></td><td class="num">3</td></tr>
+<tr><td><a href="#a"><strong>A</strong> 公司簡介</a></td><td>寇弟、馥璘</td><td>任天堂是誰、怎麼賺錢、這次漲了什麼</td></tr>
+<tr><td><a href="#b"><strong>B</strong> 問題診斷</a></td><td>寇弟、馥璘</td><td>用數據講三個問題</td></tr>
+<tr><td><a href="#c"><strong>C</strong> 挑短期問題</a></td><td>寇弟、馥璘</td><td>說明為什麼聚焦問題三</td></tr>
+<tr><td><a href="#d"><strong>D</strong> 三個 Solution</a></td><td>小魚、美樂蒂</td><td>Promotion、Place、Product 各一個解法與總結</td></tr>
 </tbody></table></div>
-<p class="hint">含封面與參考文獻約 16 頁。寇弟最熟目前資料，建議接 B。B 的客群結論會決定 D 打誰，所以 B 要先交；C 和 B 共用 9 月數字，用詞先對齊。</p>
+<p class="hint">Part A–C 的資料以<a href="https://docs.google.com/document/d/1pg8ogI1yTz7pXNlcQeTfJt-ZaUETgWnP2yXcVbvhZCw/edit">這份 Google Doc</a> 為主。Part D 要接 Part C 的結論，用詞請先對齊。</p>
 
-<h3>交件時程（以死線往回推）</h3>
-<div class="table-wrap"><table>
-<thead><tr><th class="nw">時間</th><th>要完成</th><th class="nw">負責</th></tr></thead>
-<tbody>
-<tr><td class="nw">前 5 天</td><td>認領段落；看 instructions 與 case list；有疑問問老師</td><td class="nw">全組</td></tr>
-<tr><td class="nw">前 4 天</td><td>下方「資料核對」改完，數字換成一手來源；納入半年財報</td><td class="nw">A、B、C</td></tr>
-<tr><td class="nw">前 3 天</td><td>交評論分析、客群結論、定價判斷</td><td class="nw">B、C</td></tr>
-<tr><td class="nw">前 2 天</td><td>建議定稿；四段合併成同一份投影片</td><td class="nw">D</td></tr>
-<tr><td class="nw">前 1 天</td><td>全組彩排，計時 15 分鐘，對過每個來源</td><td class="nw">全組</td></tr>
-<tr><td class="nw">週三 12:00 前</td><td>上傳 eeclass，檔名 Group＋組別。遲交每天扣 3 分</td><td class="nw">D</td></tr>
-</tbody></table></div>
-
-<h2 id="line">分析主線：四段各回答一個問題</h2>
-<ol class="chain">
-<li><span class="node">發生什麼</span><p class="ev">A：銷量預告下滑，公司仍漲價</p></li>
-<li><span class="node">誰不買</span><p class="ev">B：下一批人卡在哪裡</p></li>
-<li><span class="node">價格怎麼定</span><p class="ev">C：成本壓力下的選擇</p></li>
-<li><span class="node">下一步</span><p class="ev">D：不降價，也能跨過門檻</p></li>
+<h2 id="line">報告流程</h2>
+<ol class="chain five">
+<li><span class="node">公司簡介</span><p class="ev">Part A</p></li>
+<li><span class="node">問題診斷</span><p class="ev">Part B</p></li>
+<li><span class="node">挑短期問題</span><p class="ev">Part C</p></li>
+<li><span class="node">三個 P 解法</span><p class="ev">Part D</p></li>
+<li><span class="node">總結</span><p class="ev">Part D</p></li>
 </ol>
-<p>這是個案分析，框架只放能推進論點的。可樂那份用服務藍圖，這份用<strong>定價與產品線</strong>當核心，比較貼科技行銷。</p>
-<div class="table-wrap"><table>
-<thead><tr><th class="nw">段落</th><th>建議框架</th><th>用來回答</th></tr></thead>
-<tbody>
-<tr><td class="nw">A 案情</td><td>主機賺得少、軟體和服務賺得多的刮鬍刀模式</td><td>為什麼台數重要，漲價為什麼兩難</td></tr>
-<tr><td class="nw">B 需求</td><td>創新擴散、Moore 鴻溝（早期採用者 → 早期大眾）</td><td>鐵粉買完之後，下一批人要什麼</td></tr>
-<tr><td class="nw">C 定價</td><td>參考價格、價格公平、價值定價、產品線定價</td><td>為什麼少送一款遊戲和加價不同，舊款要放哪裡</td></tr>
-<tr><td class="nw">D 建議</td><td>STP、4P、SMART（接你們期末用的流程）</td><td>打誰、做什麼、怎麼驗收</td></tr>
-</tbody></table></div>
-<p class="hint">框架名稱請對照上課用的教材與用詞。</p>
 
-<h3>原本三個問題怎麼併</h3>
-<div class="table-wrap"><table>
-<thead><tr><th>寇弟的問題</th><th>建議改成</th><th class="nw">放在</th></tr></thead>
-<tbody>
-<tr><td>一、成長放緩，需求減少</td><td>買氣跟大作走，鐵粉之後的客群還沒被說服</td><td class="nw">B</td></tr>
-<tr><td>二、記憶體成本暴增，沒有降價空間</td><td>成本是限制條件，也是這題不能靠降價解的原因</td><td class="nw">C</td></tr>
-<tr><td>三、一二代價差可能造成內部競爭</td><td>證據撐不起內部競爭，改問<strong>舊用戶為什麼不升級</strong></td><td class="nw">B、C</td></tr>
-</tbody></table></div>
+<h2 id="a">Part A｜公司簡介</h2>
+<p class="owner"><span class="who">寇弟、馥璘</span></p>
+<h3>這段要放</h3>
+<ul>
+<li><strong>公司：</strong>任天堂同時做主機與遊戲，本案範圍是美國的 Switch 2</li>
+<li><strong>規模：</strong>2026 財年營收 ¥2 兆 3,130 億；初代累計約 1.56 億台，Switch 2 到 6 月底 2,368 萬台</li>
+<li><strong>怎麼賺錢：</strong>Switch 2 的硬體利潤率低於初代，獲利要靠遊戲與服務。數位銷售 ¥4,076 億，占軟體 54.6%</li>
+<li><strong>事件：</strong>2026/9/1 起，美國 Switch 2 從 $449.99 漲到 $499.99</li>
+</ul>
+<div class="res"><h4>這段的資料連結</h4><ul><li><a href="https://www.nintendo.com/us/whatsnew/price-revision-for-nintendo-switch-2-system/">Nintendo 官方：美國調價公告（老師資料）</a></li><li><a href="https://quartr.com/events/nintendo-co-ltd-7974-q4-2026_ozYAcLvc">Quartr：2026 財年營收與數位銷售</a></li><li><a href="https://www.tweaktown.com/news/105217">TweakTown：Switch 2 硬體利潤率低於初代</a></li><li><a href="https://gameluster.com/nintendo-switch-156-million-switch-2-sales/">Gameluster：Switch 1 與 Switch 2 累計銷量</a></li><li><a href="https://tech-insider.org/nintendo-earnings-nov-5-switch-2-16-5-million-forecast-2026/">Tech Insider：Switch 2 累計 2,368 萬台</a></li><li><a href="https://www.nintendo.co.jp/ir/en/index.html">Nintendo IR：今天的半年財報請從這裡找</a></li></ul></div>
 
-<h2 id="b">B 需求診斷：買氣跟著遊戲走</h2>
+<h2 id="b">Part B｜問題診斷</h2>
+<p class="owner"><span class="who">寇弟、馥璘</span></p>
+<p>文字內容照 <a href="https://docs.google.com/document/d/1pg8ogI1yTz7pXNlcQeTfJt-ZaUETgWnP2yXcVbvhZCw/edit">Google Doc</a>，下面是每個問題可以直接用的圖表。</p>
+<h3>問題一：一二代價差可能造成內部競爭</h3>
+<figure class="viz"><div class="scroll">
+<svg viewBox="0 0 680 236" role="img" aria-label="美國價格階梯：Switch Lite 229.99、Switch 339.99、OLED 399.99、Switch 2 499.99、Sports Resort 組合 529.99、Mario Kart 組合 549.99、PS5 649.99 美元">
+<g font-size="13" fill="var(--ink)" text-anchor="end"><text x="142" y="27">Switch Lite</text><text x="142" y="59">Switch 標準版</text><text x="142" y="91">Switch OLED</text><text x="142" y="123" font-weight="700">Switch 2</text><text x="142" y="155">＋Sports Resort</text><text x="142" y="187">＋Mario Kart</text><text x="142" y="219">PS5 標準版</text></g>
+<rect x="150" y="12" width="159" height="22" rx="3" fill="var(--steel)"/><rect x="150" y="44" width="235" height="22" rx="3" fill="var(--steel)"/><rect x="150" y="76" width="277" height="22" rx="3" fill="var(--steel)"/><rect x="150" y="108" width="346" height="22" rx="3" fill="var(--red)"/><rect x="150" y="140" width="367" height="22" rx="3" fill="var(--soft)"/><rect x="150" y="172" width="381" height="22" rx="3" fill="var(--soft)"/><rect x="150" y="204" width="450" height="22" rx="3" fill="var(--axis)"/>
+<g font-size="13" fill="var(--ink)" font-variant-numeric="tabular-nums"><text x="317" y="27">$229.99</text><text x="393" y="59">$339.99</text><text x="435" y="91">$399.99</text><text x="504" y="123" font-weight="700">$499.99</text><text x="525" y="155">$529.99</text><text x="539" y="187">$549.99</text><text x="608" y="219">$649.99</text></g>
+</svg></div>
+<figcaption>美國建議售價。灰藍為舊機種；OLED 與 Switch 2 價差由 $50 拉大到 $100</figcaption></figure>
+<p class="hint">9 月平均實付 $498，只比去年多 2%。去年約七成是組合包：($486 − $449.99) ÷ $50 ≈ 72%，請標明是推算。</p>
+<h3>問題二：記憶體成本壓縮定價空間</h3>
+<div class="table-wrap"><table>
+<caption class="hint" style="caption-side:top;text-align:left;padding-bottom:6px">每台毛利估算（2026/2 分析師估計，非公司揭露）</caption>
+<thead><tr><th>情境</th><th class="num">每台毛利</th><th>依據</th></tr></thead>
+<tbody>
+<tr><td>原本</td><td class="num">+$23</td><td>分析師估計</td></tr>
+<tr><td>記憶體 $46 → $120，不漲價</td><td class="num">−$35 至 −$50</td><td>分析師估計，2026 年底情境</td></tr>
+<tr><td>同上，再漲 $50</td><td class="num">+$15 至 $0</td><td>我們的算式，假設 $50 全歸任天堂，未扣通路</td></tr>
+</tbody></table></div>
+<p class="hint">古川說零件與關稅影響約 ¥1,000 億，漲價也補不回全部成本。這句來自公司，建議和分析師估計一起放。</p>
+<h3>問題三：Switch 2 成長放緩，剩下的客人在觀望</h3>
 <figure class="viz"><div class="scroll">
 <svg viewBox="0 0 640 262" role="img" aria-label="美國市場 Switch 2 累計銷量領先初代 Switch 同期的幅度：第 2 個月 75%，第 3 個月 77%，第 10 個月 12%，第 11 個月 11%">
 <g font-size="12" fill="var(--muted)">
@@ -159,7 +163,6 @@ footer{color:var(--muted);font-size:13px;border-top:1px solid var(--line);paddin
 <text x="350" y="104" font-size="12" fill="var(--muted)">虛線區間未取得 Circana 數字</text>
 </svg></div>
 <figcaption>Circana 美國數字，經媒體轉述；領先幅度指累計單位數與初代同期相比</figcaption></figure>
-
 <div class="table-wrap"><table>
 <caption class="hint" style="caption-side:top;text-align:left;padding-bottom:6px">2026 年 9 月美國主機（Circana，8/30–10/3）</caption>
 <thead><tr><th>平台</th><th class="num">平均實付</th><th class="num">實付變化</th><th class="num">單位數</th><th class="num">金額</th></tr></thead>
@@ -168,124 +171,76 @@ footer{color:var(--muted);font-size:13px;border-top:1px solid var(--line);paddin
 <tr><td>Switch 2</td><td class="num">$498</td><td class="num">+2%</td><td class="num"><strong>−14%</strong></td><td class="num">−12%</td></tr>
 <tr><td>Xbox Series</td><td class="num">$663</td><td class="num">+33%</td><td class="num">−27%</td><td class="num">−2%</td></tr>
 </tbody></table></div>
-<p>這張表是全份報告最值得講的一頁。PS5 漲得比較多卻賣得更好，代表價格解釋不了全部，當月的大作很關鍵。但只有一個月，又有 Wolverine 上市，只能當<strong>訊號</strong>，10 月 Circana 出來要再對一次。</p>
-<p><strong>舊用戶：</strong>初代全球賣出約 1.56 億台，Switch 2 到 6 月底 2,368 萬台，約 15%（全球數字，兩者不是同一批人的升級率）。古川 2 月也說，要讓還在玩 Switch 的人，碰到想玩的新作時轉移過來。這比內部競爭更有故事，也接得上 D 的建議。</p>
-
-<h2 id="c">C 定價決策：成本是限制，定價是選擇</h2>
-<div class="table-wrap"><table>
-<caption class="hint" style="caption-side:top;text-align:left;padding-bottom:6px">每台毛利估算（2026/2 分析師估計，非公司揭露）</caption>
-<thead><tr><th>情境</th><th class="num">每台毛利</th><th>依據</th></tr></thead>
-<tbody>
-<tr><td>原本</td><td class="num">+$23</td><td>分析師估計</td></tr>
-<tr><td>記憶體 $46 → $120，不漲價</td><td class="num">−$35 至 −$50</td><td>分析師估計，2026 年底情境</td></tr>
-<tr><td>同上，再漲 $50</td><td class="num">+$15 至 $0</td><td>我們的算式，假設 $50 全歸任天堂，未扣通路</td></tr>
-</tbody></table></div>
-<p>公司層級：古川說零件與關稅影響約 ¥1,000 億，漲價<strong>補不回全部成本</strong>；本年度淨利預估 −27%。這句比 $23 更可靠，投影片建議兩個一起放。</p>
-
-<figure class="viz"><div class="scroll">
-<svg viewBox="0 0 680 236" role="img" aria-label="美國價格階梯：Switch Lite 229.99、Switch 339.99、OLED 399.99、Switch 2 499.99、Sports Resort 組合 529.99、Mario Kart 組合 549.99、PS5 649.99 美元">
-<g font-size="13" fill="var(--ink)" text-anchor="end"><text x="142" y="27">Switch Lite</text><text x="142" y="59">Switch 標準版</text><text x="142" y="91">Switch OLED</text><text x="142" y="123" font-weight="700">Switch 2</text><text x="142" y="155">＋Sports Resort</text><text x="142" y="187">＋Mario Kart</text><text x="142" y="219">PS5 標準版</text></g>
-<rect x="150" y="12" width="159" height="22" rx="3" fill="var(--steel)"/><rect x="150" y="44" width="235" height="22" rx="3" fill="var(--steel)"/><rect x="150" y="76" width="277" height="22" rx="3" fill="var(--steel)"/><rect x="150" y="108" width="346" height="22" rx="3" fill="var(--red)"/><rect x="150" y="140" width="367" height="22" rx="3" fill="var(--soft)"/><rect x="150" y="172" width="381" height="22" rx="3" fill="var(--soft)"/><rect x="150" y="204" width="450" height="22" rx="3" fill="var(--axis)"/>
-<g font-size="13" fill="var(--ink)" font-variant-numeric="tabular-nums"><text x="317" y="27">$229.99</text><text x="393" y="59">$339.99</text><text x="435" y="91">$399.99</text><text x="504" y="123" font-weight="700">$499.99</text><text x="525" y="155">$529.99</text><text x="539" y="187">$549.99</text><text x="608" y="219">$649.99</text></g>
-</svg></div>
-<figcaption>美國建議售價。灰藍為舊機種；OLED 與 Switch 2 價差由 $50 拉大到 $100</figcaption></figure>
-
-<div class="table-wrap"><table>
-<thead><tr><th>選項</th><th>保住</th><th>代價</th><th class="nw">任天堂</th></tr></thead>
-<tbody>
-<tr><td>吸收成本</td><td>入門門檻與台數</td><td>硬體獲利。古川說長期影響經營</td><td class="nw">放棄</td></tr>
-<tr><td>只賣較貴組合，停掉單機</td><td>帳面單機價不漲</td><td>失去入門選項。Niko Partners 曾預測</td><td class="nw">未採用</td></tr>
-<tr><td>調漲建議售價</td><td>部分硬體毛利</td><td>古川承認會形成購買門檻</td><td class="nw">採用</td></tr>
-<tr><td>數位比實體便宜 $10</td><td>數位比重，推向帳戶內消費</td><td>實體玩家感受較差</td><td class="nw">2026/5 起</td></tr>
-</tbody></table></div>
-<p><strong>溝通面：</strong>Switch 2 提前近 4 個月通知，零售展示機也有提醒；PS5 上次只有 6 天，Xbox 37 天。這可以連到價格公平。提前通知也可能讓人趕在 9/1 前購買，這個量有多大，目前還沒有資料。</p>
-
-<h2 id="d">D 建議（初稿）：不動建議售價，改動入口</h2>
-<p>討論起點如下，組內可改寫。共同邏輯是<strong>數位內容不吃記憶體</strong>，用遊戲和服務補價值，比降主機價便宜，也不會拉低顧客心中的參考價。</p>
-<div class="table-wrap"><table>
-<thead><tr><th class="nw">打誰</th><th>建議</th><th>為什麼這樣做</th><th>怎麼衡量</th></tr></thead>
-<tbody>
-<tr><td class="nw">Switch 1<br>未升級者</td><td>用 Nintendo Account 發限時升級禮，例如 eShop 點數</td><td>只給目標客群，公開售價不動</td><td>升級禮使用率、舊帳號升級數</td></tr>
-<tr><td class="nw">家庭與<br>休閒玩家</td><td>Sports Resort 組合加長家庭版 Switch Online</td><td>這群人比鐵粉更看整體划算，也提高續訂機會</td><td>組合占比、Switch Online 續訂</td></tr>
-<tr><td class="nw">觀望者</td><td>把訊息從「主機多少錢」改成「$499 買到什麼」：向下相容、舊遊戲升級版、數位省 $10</td><td>補上 B 找到的不買理由</td><td>評論中價格與價值的討論比例</td></tr>
-</tbody></table></div>
-<p><strong>SMART 初稿：</strong>2026/11–2027/3，美國 Switch 2 累計銷量由 9 月的 −14% 轉為同比成長（Circana），同時全球達成 1,650 萬台預測，累計約 3,636 萬台。美國基準值由 D 補上。</p>
-<p><strong>風險：</strong>9/1 前已買的人可能不滿；舊用戶未必有帳號紀錄；訊息不夠清楚會被看成變相降價。Nintendo 現有回收或換購方案也要先查，避免建議已存在的東西。</p>
-<h3>討論題</h3>
-<ul>
-<li>同樣多付約 $50，加價和少送一款遊戲，你的感受一樣嗎？</li>
-<li>主機該賺錢，還是只要賣得多？任天堂一直避免虧本賣主機，這條線還守得住嗎？</li>
-<li>如果記憶體明年再漲，你會再加價、縮規格，還是推新機型？</li>
-</ul>
-
-<h2 id="voice">自製資料：Reddit 評論分析</h2>
-<p>這份目前全是二手數字，缺顧客聲音。取 r/NintendoSwitch、r/NintendoSwitch2 等討論區在 5/8 公告後與 9/1 之後的 200 則留言，標記持有狀態（已買、Switch 1 未升級、未持有）和不買理由（價格、遊戲不夠、沒有必要、等降價）。由 B 負責，AI 可協助分類，人工要抽查。</p>
-<p class="hint">Reddit 偏核心玩家，只能當訊號。投影片要寫明樣本和抽樣日期。</p>
-
-<h2 id="fix">資料核對：寇弟的整理要改哪裡</h2>
-<p>大部分數字查得到，以下幾條上台前要改。老師規定抄襲整份 0 分，每個數字都要能回到來源。</p>
-<div class="table-wrap"><table>
-<thead><tr><th class="nw">狀態</th><th>原本寫</th><th>查到的情況</th><th>建議</th></tr></thead>
-<tbody>
-<tr><td class="nw"><span class="tag fix">要改</span></td><td>古川表示優先追求台數，而非硬體獲利</td><td>2 月原文只說第二、三年很重要，會彈性考慮，也說傳統上盡量避免虧本賣。「優先台數」是媒體解讀，5 月他已決定漲價</td><td>改寫成「2 月強調裝機量，5 月仍選擇漲價」，這個轉折更好講</td></tr>
-<tr><td class="nw"><span class="tag fix">要改</span></td><td>Pokopia 帶動硬體 +69%</td><td>+69% 是 3 月美國<strong>全部硬體金額</strong>（$500M）。Circana 說 Pokopia 是 Switch 2 主要動力</td><td>分開寫，別說 Switch 2 銷量 +69%</td></tr>
-<tr><td class="nw"><span class="tag fix">要改</span></td><td>整體主機市場萎縮</td><td>8 月低點成立，但 9 月硬體金額 +12%、PS5 單位數 +22%</td><td>不能全怪市場，改成「市場弱，Switch 2 也輸給 PS5」</td></tr>
-<tr><td class="nw"><span class="tag fix">要改</span></td><td>PS5、Steam Deck 也都漲價</td><td>漏了漲幅更大的 Xbox。Steam Deck 目前只查到二手說法</td><td>加入 Xbox，Steam Deck 找官方來源或拿掉</td></tr>
-<tr><td class="nw"><span class="tag note">加註</span></td><td>領先幅度 77% 縮到 11%</td><td>數字對，分別是第 3 與第 11 個月。Circana 分析師也提醒比較基準特殊：初代上市時常缺貨，時間又不同季</td><td>標明月份，別當成同期衰退</td></tr>
-<tr><td class="nw"><span class="tag note">加註</span></td><td>每台賺 $23，漲 $50 只是打平</td><td>只有最壞情境打平，且是 2 月估計。媒體寫 USB Securities，可能是 UBS 筆誤</td><td>寫「估計」，查原報告或用古川的公司層級說法</td></tr>
-<tr><td class="nw"><span class="tag note">加註</span></td><td>鐵粉都買了，漲價影響價格敏感客群</td><td>合理推論，但目前沒有客群數字</td><td>由 Reddit 分析和古川的「門檻」說法支撐</td></tr>
-<tr><td class="nw"><span class="tag note">加註</span></td><td>不能直接降價</td><td>公司沒有這樣說；歐洲已有黑五折扣傳聞</td><td>區分建議售價和通路促銷</td></tr>
-<tr><td class="nw"><span class="tag note">補來源</span></td><td>全配約 $700</td><td>$560–$580 算得出來（主機＋$60–$80 遊戲），$700 查不到</td><td>寇弟補品項清單</td></tr>
-<tr><td class="nw"><span class="tag ok">已確認</span></td><td>價格表、$498 對 $486、去年 $499.99 含遊戲</td><td>官方確認美國舊款不調整；Circana 也如此解釋 2%</td><td>可直接用，附上 9 月期間 8/30–10/3</td></tr>
-</tbody></table></div>
-
-<h2 id="todo">報告前待確認</h2>
+<div class="res"><h4>這段的資料連結</h4><ul><li><a href="https://docs.google.com/document/d/1pg8ogI1yTz7pXNlcQeTfJt-ZaUETgWnP2yXcVbvhZCw/edit">Google Doc：三個問題的完整整理</a></li><li><a href="https://www.circana.com/post/top-10-video-games">Circana：2026 年 9 月美國市場</a></li><li><a href="https://gamedevreports.substack.com/p/circana-the-us-video-game-market-2fa">GameDev Reports：平均實付與組合包說明</a></li><li><a href="https://www.videogameschronicle.com/news/xbox-hits-worst-us-sales-month-on-record-ps5-drops-58-as-hardware-prices-soar/">VGC：5 月 PS5、Xbox 同期新低</a></li><li><a href="https://shattered.io/video-game-hardware-sales-13-year-low-2026/">Shattered：8 月 13 年低點（待換 Circana 原文）</a></li><li><a href="https://www.videogameschronicle.com/news/analysis-nintendo-forecasts-switch-2-sales-slowdown-as-price-hikes-confirmed/">VGC：1,650 萬台預測，年減 17%</a></li><li><a href="https://wnhub.io/news/finance/item-50648">GamesIndustry.biz 轉載：3 月硬體 +69%</a></li><li><a href="https://www.videogameschronicle.com/news/switch-2-continues-to-break-us-launch-sales-records-selling-more-in-its-first-three-months-than-ps4">VGC：上市 3 個月領先 77%</a></li><li><a href="https://www.vgchartz.com/article/467862/us-monthly-april-2026/">VGChartz：前 11 個月領先 11%</a></li><li><a href="https://www.notebookcheck.net/Nintendo-could-lose-up-to-50-per-Switch-2-sale-without-price-increase-as-memory-costs-rise.1219092.0.html">Notebookcheck：每台毛利 $23 的估算</a></li><li><a href="https://www.nintendo.co.jp/ir/pdf/2026/260204e.pdf">Nintendo：2026/2 法說 Q&A，古川原文</a></li><li><a href="https://www.thestar.com.my/tech/tech-news/2026/05/08/sony-nintendo-grapple-with-memory-price-surge-as-ai-boom-constrains-supply">Reuters 轉載：¥1,000 億成本影響</a></li><li><a href="https://www.gematsu.com/2026/08/nintendo-switch-2-mario-kart-world-and-nintendo-switch-sports-resort-bundles-announced">Gematsu：$549.99 與 $529.99 組合包</a></li></ul></div>
+<h3>上台前要改</h3>
 <ul class="check">
-<li><strong>今天的半年財報：</strong>任天堂排定 11/5 公布，這頁還沒納入。看 7–9 月 Switch 2 銷量、1,650 萬台預測有沒有改</li>
-<li><strong>Instructions 與 case list：</strong>截圖提到這兩份，我還沒看到，請確認有沒有指定問題或格式</li>
-<li><strong>繳交檔案：</strong>截圖寫 Two files，但只列出投影片（檔名是規則），請確認第二份要交什麼</li>
-<li><strong>週三是哪一天：</strong>截圖沒寫日期。時程先用倒數，定了再換成日期</li>
-<li><strong>Q&amp;A：</strong>15 分鐘是否包含問答；如包含，每段各縮 30 秒</li>
-<li><strong>10 月 Circana：</strong>約 11 月下旬公布，趕得上就更新 PS5 對 Switch 2 的比較</li>
-<li><strong>一手來源：</strong>8 月「13 年最低」要找 Circana 原文；5 月 Q&amp;A 要改引任天堂官方 PDF</li>
-<li><strong>舊款銷量：</strong>官方與 Circana 未公開，VGChartz 估計只能標示為估計</li>
-<li><strong>範圍：</strong>主要談美國，日本 +20%、歐洲 +6% 只當對照</li>
+<li><strong>「價格不是主因」：</strong>這句和同一段的「漲價後買氣轉弱」互相衝突。5 月 PS5 平均實付 +33%，台數 −58%，價格明顯有影響。建議改成「價格會壓低買氣，但有大作時買氣回得來」。9 月只有一個月數據，也要講清楚</li>
+<li><strong>Switch 1 第二年 +13%：</strong>請附任天堂 IR 的銷量資料，並說明是用會計年度比較</li>
+<li><strong>領先幅度：</strong>77% 是第 3 個月，11% 是第 11 個月。Circana 分析師提醒比較基準特殊，投影片要標月份</li>
+<li><strong>$23：</strong>媒體寫 USB Securities，可能是 UBS 筆誤，請查原報告</li>
+<li><strong>半年財報：</strong>任天堂排定今天公布，我查的時候還沒找到全文。出來後要更新銷量和 1,650 萬台預測</li>
 </ul>
 
-<h2 id="sources">資料來源清單</h2>
-<p class="hint">一手來源優先引用。其餘為媒體轉述，上台前請換成原文。</p>
-<h3>一手</h3>
-<ul class="src">
-<li><a href="https://www.nintendo.com/us/whatsnew/price-revision-for-nintendo-switch-2-system/">Nintendo：Price Revision for Nintendo Switch 2 System（老師提供）</a></li>
-<li><a href="https://www.nintendo.co.jp/ir/pdf/2026/260204e.pdf">Nintendo：2026/2/3 法說 Q&amp;A</a></li>
-<li><a href="https://www.nintendo.co.jp/ir/en/index.html">Nintendo IR：財報日程</a></li>
-<li><a href="https://www.circana.com/post/top-10-video-games">Circana：2026 年 9 月美國遊戲市場</a></li>
+<h2 id="c">Part C｜挑短期問題</h2>
+<p class="owner"><span class="who">寇弟、馥璘</span></p>
+<div class="table-wrap"><table>
+<thead><tr><th>問題</th><th>影響</th><th>任天堂可控嗎</th><th class="nw">決定</th></tr></thead>
+<tbody>
+<tr><td>一、一二代價差</td><td>實付只多 2%，美國舊款銷量未公開，無法驗證</td><td>可控</td><td class="nw">不聚焦</td></tr>
+<tr><td>二、記憶體成本</td><td>壓縮定價空間</td><td>短期不可控</td><td class="nw">當限制條件</td></tr>
+<tr><td><strong>三、成長放緩</strong></td><td>影響整體需求，官方預估台數年減 17%</td><td>遊戲檔期與組合包可控</td><td class="nw"><strong>聚焦</strong></td></tr>
+</tbody></table></div>
+<p><strong>交棒給 Part D：</strong>問題二說明短期動不了 Price，問題三說明要給觀望者理由，所以 Solution 從 Promotion、Place、Product 下手。</p>
+<div class="res"><h4>這段的資料連結</h4><ul><li><a href="https://docs.google.com/document/d/1pg8ogI1yTz7pXNlcQeTfJt-ZaUETgWnP2yXcVbvhZCw/edit">Google Doc：「為什麼聚焦問題三」段落</a></li><li><a href="https://www.circana.com/post/top-10-video-games">Circana：2026 年 9 月美國市場</a></li></ul></div>
+
+<h2 id="d">Part D｜三個 Solution</h2>
+<p class="owner"><span class="who">小魚、美樂蒂</span></p>
+<p>三個 P 都要接 Part C：<strong>對象是還在觀望的人，時間是接下來的假期季到 2027/3</strong>。以下是討論起點，可以改寫。每個 P 請回答：打誰、做什麼、任天堂現在做到哪、怎麼衡量。</p>
+
+<h3 id="promotion">Promotion：讓還在用 Switch 1 的人知道現在該升級</h3>
+<ul>
+<li><strong>打誰：</strong>有 Switch 1、還沒升級的人</li>
+<li><strong>初步方向：</strong>大作上市週，透過 Nintendo Account 發限時升級禮，例如 eShop 點數，公開售價不動</li>
+<li><strong>可以用的證據：</strong>古川說要維持 Switch 玩家活躍，等新作出現時再轉移；Nintendo Account 約 4 億</li>
+<li><strong>怎麼衡量：</strong>升級禮使用率、舊帳號升級數</li>
+<li><strong>要補：</strong>現有會員活動、美國舊用戶規模</li>
 </ul>
-<h3>媒體轉述</h3>
-<ul class="src">
-<li><a href="https://gamedevreports.substack.com/p/circana-the-us-video-game-market-2fa">GameDev Reports：9 月實付價與 Piscatella 的組合包說明</a></li>
-<li><a href="https://www.videogameschronicle.com/news/analysis-nintendo-forecasts-switch-2-sales-slowdown-as-price-hikes-confirmed/">VGC：1,650 萬台預測與銷量分析</a></li>
-<li><a href="https://www.videogameschronicle.com/news/switch-2-continues-to-break-us-launch-sales-records-selling-more-in-its-first-three-months-than-ps4">VGC：上市 3 個月領先 77%</a></li>
-<li><a href="https://www.gamesradar.com/games/switch-2-is-selling-75-percent-faster-than-the-original-switch-in-the-us-analyst-reports-and-thats-probably-because-nintendo-actually-made-enough-consoles-this-time">GamesRadar：上市 2 個月領先 75%</a></li>
-<li><a href="https://wnhub.io/news/finance/item-50648">GamesIndustry.biz 轉載：3 月硬體 +69%、前 10 個月 +12%</a></li>
-<li><a href="https://www.vgchartz.com/article/467862/us-monthly-april-2026/">VGChartz：4 月 Circana，前 11 個月 +11%</a></li>
-<li><a href="https://gameluster.com/?p=120436">Gameluster：Piscatella 談 Pokopia</a></li>
-<li><a href="https://www.notebookcheck.net/Nintendo-could-lose-up-to-50-per-Switch-2-sale-without-price-increase-as-memory-costs-rise.1219092.0.html">Notebookcheck：每台毛利 $23 的估算</a></li>
-<li><a href="https://www.thestar.com.my/tech/tech-news/2026/05/08/sony-nintendo-grapple-with-memory-price-surge-as-ai-boom-constrains-supply">Reuters 轉載：¥1,000 億成本影響</a></li>
-<li><a href="https://nintendowire.com/news/2026/05/11/nintendo-president-states-switch-2-price-increase-wont-cover-all-cost-increases/">Nintendo Wire：漲價無法涵蓋全部成本</a></li>
-<li><a href="https://www.invenglobal.com/articles/21757/nintendo-president-switch-2-price-hike-inevitable">Inven Global：5 月法說重點</a></li>
-<li><a href="https://finance.yahoo.com/markets/stocks/articles/nintendo-switch-2-price-hike-125304028.html">Quartz／Yahoo Finance：全球調價與獲利預估</a></li>
-<li><a href="https://www.notebookcheck.net/Nintendo-warns-about-Switch-2-price-increase-on-console-kiosks-contrasting-PS5-approach.1366900.0.html">Notebookcheck：展示機提醒與 PS5、Xbox 通知天數</a></li>
-<li><a href="https://www.gematsu.com/2026/08/nintendo-switch-2-mario-kart-world-and-nintendo-switch-sports-resort-bundles-announced">Gematsu：$549.99 與 $529.99 組合</a></li>
-<li><a href="https://www.tweaktown.com/news/110665/nintendo-price-adjusts-new-switch-2-games-in-us-region-digital-to-be-cheaper-and-physical-more-expensive/index.html">TweakTown：數位遊戲較便宜</a></li>
-<li><a href="https://www.tweaktown.com/news/109798/switch-2-price-increase-to-dollars499-coming-in-2026-analyst-predicts/index.html">TweakTown：Niko Partners 預測</a></li>
-<li><a href="https://www.aol.com/articles/switch-becomes-nintendos-best-selling-095110838.html">IGN／AOL：初代累計銷量</a></li>
-<li><a href="https://gameluster.com/nintendo-switch-156-million-switch-2-sales/">Gameluster：初代 1.56 億、Switch 2 1,986 萬</a></li>
-<li><a href="https://tech-insider.org/nintendo-earnings-nov-5-switch-2-16-5-million-forecast-2026/">Tech Insider：第一季 382 萬、累計 2,368 萬</a></li>
-<li><a href="https://shattered.io/video-game-hardware-sales-13-year-low-2026/">Shattered：8 月 13 年低點（待換 Circana 原文）</a></li>
-<li><a href="https://nintendowire.com/?p=222991">Nintendo Wire：Piscatella 談比較基準</a></li>
-<li><a href="https://notebookcheck.net/nintendo-switch-2-first-black-friday-bundle-leak-hints-at-gaming-bargain.1437332.0.html">Notebookcheck：歐洲黑五折扣傳聞</a></li>
+<div class="res"><h4>這段的資料連結</h4><ul><li><a href="https://www.nintendo.co.jp/ir/pdf/2026/260204e.pdf">Nintendo：2026/2 法說 Q&A，Q7 談舊用戶轉移</a></li><li><a href="https://www.shacknews.com/article/146676/nintendo-accounts-hit-400-million">Shacknews：Nintendo Account 4 億</a></li><li><a href="https://www.vgchartz.com/article/468781/switch-2-vs-switch-1-sales-comparison-in-the-us-july-2026/">VGChartz：美國 Switch 1 與 Switch 2 銷量估計</a></li><li><a href="https://www.tweaktown.com/news/110665/nintendo-price-adjusts-new-switch-2-games-in-us-region-digital-to-be-cheaper-and-physical-more-expensive/index.html">TweakTown：數位遊戲便宜 $10</a></li></ul></div>
+
+<h3 id="place">Place：讓觀望的人在門市玩到大作</h3>
+<ul>
+<li><strong>打誰：</strong>還沒決定、想先試玩的休閒玩家與家庭</li>
+<li><strong>初步方向：</strong>把 Target、Walmart 等門市的試玩機和大作檔期綁在一起，並在黑五與假期檔加強</li>
+<li><strong>可以用的證據：</strong>任天堂已在門市放試玩機，Star Fox 也有零售試玩</li>
+<li><strong>怎麼衡量：</strong>有試玩門市與對照門市的銷量差異、試玩活動參與數</li>
+<li><strong>要補：</strong>美國門市數、通路銷售比重。任天堂未必公開，查不到要標示假設</li>
 </ul>
+<div class="res"><h4>這段的資料連結</h4><ul><li><a href="https://www.notebookcheck.net/Playable-Zelda-Ocarina-of-Time-Switch-2-demo-may-appear-at-stores-before-release-date.1435358.0.html">Notebookcheck：Target、Walmart 的 Zelda 試玩機（尚未證實可玩）</a></li><li><a href="https://nintendowire.com/news/2026/06/15/playable-star-fox-demo-featuring-corneria-stage-coming-to-retailers-across-us-and-canada/">Nintendo Wire：Star Fox 零售試玩</a></li><li><a href="https://www.nintendolife.com/news/2026/03/super-mario-bros-wonder-plus-meetup-in-bellabel-park-demo-now-available-at-switch-2-kiosks-north-america">Nintendo Life：北美試玩機更新</a></li><li><a href="https://gameinformer.com/2025/05/28/here-are-the-retailers-selling-nintendo-switch-2">Game Informer：美國販售 Switch 2 的零售商</a></li><li><a href="https://www.siliconera.com/nintendo-san-francisco-will-open-up-in-may-2025/">Siliconera：Nintendo San Francisco 門市</a></li><li><a href="https://www.notebookcheck.net/Nintendo-warns-about-Switch-2-price-increase-on-console-kiosks-contrasting-PS5-approach.1366900.0.html">Notebookcheck：試玩機上的漲價提醒</a></li></ul></div>
+
+<h3 id="product">Product：把最強的遊戲放進組合包</h3>
+<ul>
+<li><strong>打誰：</strong>要有明確遊戲理由才會買的人</li>
+<li><strong>初步方向：</strong>檢視現有組合包，把假期最強新作放進去。遊戲是下載碼，不用多吃記憶體</li>
+<li><strong>可以用的證據：</strong>現有組合是 Mario Kart $549.99、Sports Resort $529.99；Zelda 版主機不含遊戲。接下來有 Zelda 11/5、Monster Hunter Wilds 12/4、Metroid Ravenous 1/28</li>
+<li><strong>怎麼衡量：</strong>組合包占比、大作上市月的 Switch 2 銷量</li>
+<li><strong>要補：</strong>這些遊戲夠不夠強？是否吸引 Switch 1 老玩家以外的人？</li>
+</ul>
+<div class="res"><h4>這段的資料連結</h4><ul><li><a href="https://www.gematsu.com/2026/08/nintendo-switch-2-mario-kart-world-and-nintendo-switch-sports-resort-bundles-announced">Gematsu：現有組合包內容與價格</a></li><li><a href="https://www.levelup.com/en/news/nintendo-switch-2-will-get-a-the-legend-of-zelda-ocarina-of-time-remake-edition-but-it-wont-include-the-game/">LevelUp：Zelda 版主機不含遊戲</a></li><li><a href="https://english.adnkronos.com/2026/09/09/nintendo-to-release-zelda-game-remake-for-switch-2-nov-5/">Jiji：Zelda 重製版 11/5 上市</a></li><li><a href="https://www.dexerto.com/gaming/everything-announced-at-nintendo-direct-september-2026-3407305/">Dexerto：9 月 Direct 遊戲時程</a></li><li><a href="https://www.videogameschronicle.com/news/analysis-nintendo-forecasts-switch-2-sales-slowdown-as-price-hikes-confirmed/">VGC：各遊戲銷量</a></li></ul></div>
+
+<h3 id="close">總結</h3>
+<p><strong>SMART 初稿：</strong>2026/11–2027/3，美國 Switch 2 累計銷量由 9 月的 −14% 轉為同比成長（Circana），同時全球達成 1,650 萬台預測，累計約 3,636 萬台。美國基準值要再補。</p>
+<p><strong>風險：</strong>9/1 前已買的人可能不滿；舊用戶未必有帳號紀錄；試玩機的成效要靠門市比較才看得出來。Nintendo 現有的換購方案也要先查，避免建議已存在的東西。</p>
+<p><strong>討論題：</strong>同樣多付約 $50，加價和少送一款遊戲，你的感受一樣嗎？</p>
+<p class="hint">想補顧客聲音，可以抽 200 則 Reddit 留言，分類還沒買的理由。這是加分項，樣本偏核心玩家。</p>
+
+<h2 id="shared">共用資料</h2>
+<ul class="src">
+<li><a href="https://docs.google.com/document/d/1pg8ogI1yTz7pXNlcQeTfJt-ZaUETgWnP2yXcVbvhZCw/edit">Google Doc：分析整理</a></li>
+<li><a href="https://www.nintendo.com/us/whatsnew/price-revision-for-nintendo-switch-2-system/">老師資料：Nintendo 官方調價公告</a></li>
+<li><a href="https://www.nintendo.co.jp/ir/en/index.html">Nintendo IR：財報</a></li>
+<li><a href="https://www.circana.com/post/top-10-video-games">Circana：美國月報</a></li>
+</ul>
+<p class="hint">投影片每個數字都要附來源，老師規定抄襲整份 0 分。交件格式：PowerPoint 或 PDF，上傳 eeclass，檔名 Group＋組別。</p>
 </main>
 </div>
 <footer><div class="wrap">美元為美國建議售價或 Circana 平均實付。估算與推論已在內文標示，建議段落為組內討論初稿。</div></footer>
