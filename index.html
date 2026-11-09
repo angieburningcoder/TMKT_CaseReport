@@ -63,6 +63,8 @@ h4{font-size:14px;margin:0 0 4px;color:var(--muted);font-weight:700}
 .owner{margin:-4px 0 14px}.who{display:inline-block;font-size:14px;font-weight:700;color:var(--bg2);background:var(--red);border-radius:999px;padding:2px 14px}
 .res{background:var(--bg2);border:1px solid var(--line);border-radius:12px;padding:12px 16px;margin:16px 0}.res ul{margin:0}.res li{font-size:14.5px}
 table.tight{min-width:0}h3[id]{scroll-margin-top:16px}
+.duo{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px;margin:16px 0}.role{background:var(--bg2);border:1px solid var(--soft);border-radius:12px;padding:12px 16px;min-width:0}.role ul{margin:6px 0 0;padding-left:18px}.role li{font-size:14.5px}.role-n{margin:0;font-weight:700;font-size:17px;color:var(--strong)}.role-p{margin:2px 0 0;font-size:13.5px;color:var(--steel);font-weight:700}
+@media (max-width:640px){.duo{grid-template-columns:1fr}}
 .chain.five{grid-template-columns:repeat(5,minmax(0,1fr))}
 @media (max-width:640px){.chain.five{grid-template-columns:repeat(2,minmax(0,1fr))}.chain.five li:nth-child(odd)::before{display:none}}
 footer{color:var(--muted);font-size:13px;border-top:1px solid var(--line);padding-block:22px 44px}
@@ -82,7 +84,7 @@ footer{color:var(--muted);font-size:13px;border-top:1px solid var(--line);paddin
 <nav class="toc" aria-label="本頁目錄"><a href="#team">誰負責哪裡</a><a href="#a">Part A 公司簡介</a><a href="#b">Part B 問題診斷</a><a href="#c">Part C 挑短期問題</a><a href="#d">Part D 三個 Solution</a><a href="#shared">共用資料</a></nav>
 
 <main>
-<p class="lead"><strong>報告主軸：</strong>Switch 2 的短期問題是觀望的人缺少購買理由。價格和記憶體成本短期動不了，所以我們從 <strong>Promotion、Place、Product</strong> 各提一個解法。</p>
+<p class="lead"><strong>報告主軸：</strong>Switch 2 的短期問題是觀望的人缺少購買理由。建議售價和記憶體成本短期動不了，所以 Price 當限制條件，從 <strong>Product、Place、Promotion</strong> 各提一個解法。</p>
 
 <h2 id="story">個案故事：開局破紀錄的主機，為什麼第二年還有人在觀望？</h2>
 <div class="story">
@@ -112,8 +114,8 @@ footer{color:var(--muted);font-size:13px;border-top:1px solid var(--line);paddin
 <tbody>
 <tr><td><a href="#a"><strong>A</strong> 公司簡介</a></td><td>寇弟、馥璘</td><td>任天堂是誰、怎麼賺錢、這次漲了什麼</td></tr>
 <tr><td><a href="#b"><strong>B</strong> 問題診斷</a></td><td>寇弟、馥璘</td><td>用數據講三個問題</td></tr>
-<tr><td><a href="#c"><strong>C</strong> 挑短期問題</a></td><td>寇弟、馥璘</td><td>說明為什麼聚焦問題三</td></tr>
-<tr><td><a href="#d"><strong>D</strong> 三個 Solution</a></td><td>小魚、美樂蒂</td><td>Promotion、Place、Product 各一個解法與總結</td></tr>
+<tr><td><a href="#c"><strong>C</strong> 挑短期問題</a></td><td>寇弟、馥璘</td><td>說明為什麼聚焦問題三，以及為什麼不直接降價</td></tr>
+<tr><td><a href="#d"><strong>D</strong> 三個 Solution</a></td><td>小魚、美樂蒂</td><td>美樂蒂：Product、Place<br>小魚：Promotion、總結</td></tr>
 </tbody></table></div>
 <p class="hint">Part A–C 的資料以<a href="https://docs.google.com/document/d/1pg8ogI1yTz7pXNlcQeTfJt-ZaUETgWnP2yXcVbvhZCw/edit">這份 Google Doc</a> 為主。Part D 要接 Part C 的結論，用詞請先對齊。</p>
 
@@ -203,22 +205,36 @@ footer{color:var(--muted);font-size:13px;border-top:1px solid var(--line);paddin
 <tr><td>二、記憶體成本</td><td>壓縮定價空間</td><td>短期不可控</td><td class="nw">當限制條件</td></tr>
 <tr><td><strong>三、成長放緩</strong></td><td>影響整體需求，官方預估台數年減 17%</td><td>遊戲檔期與組合包可控</td><td class="nw"><strong>聚焦</strong></td></tr>
 </tbody></table></div>
-<p><strong>交棒給 Part D：</strong>問題二說明短期動不了 Price，問題三說明要給觀望者理由，所以 Solution 從 Promotion、Place、Product 下手。</p>
-<div class="res"><h4>這段的資料連結</h4><ul><li><a href="https://docs.google.com/document/d/1pg8ogI1yTz7pXNlcQeTfJt-ZaUETgWnP2yXcVbvhZCw/edit">Google Doc：「為什麼聚焦問題三」段落</a></li><li><a href="https://www.circana.com/post/top-10-video-games">Circana：2026 年 9 月美國市場</a></li></ul></div>
+<h3 id="price">為什麼不直接降價（Price 當限制條件）</h3>
+<ol>
+<li><strong>成本不允許：</strong>記憶體成本上升，古川說漲價也補不回全部成本</li>
+<li><strong>會傷參考價格：</strong>剛漲完就降，等於教消費者等降價，也會讓 9/1 前買的人不滿</li>
+<li><strong>價格不是唯一原因：</strong>價格會壓低買氣（5 月 PS5 實付 +33%、台數 −58%），但 9 月 Switch 2 實付只多 2% 台數卻 −14%，同月 PS5 漲更多反而成長。缺的是購買理由</li>
+</ol>
+<p><strong>交棒給 Part D：</strong>不動建議售價，改用組合與價值調整實際價格，再從 Product、Place、Promotion 給觀望者理由。</p>
+<div class="res"><h4>這段的資料連結</h4><ul><li><a href="https://docs.google.com/document/d/1pg8ogI1yTz7pXNlcQeTfJt-ZaUETgWnP2yXcVbvhZCw/edit">Google Doc：「為什麼聚焦問題三」段落</a></li><li><a href="https://www.circana.com/post/top-10-video-games">Circana：2026 年 9 月美國市場</a></li><li><a href="https://www.videogameschronicle.com/news/xbox-hits-worst-us-sales-month-on-record-ps5-drops-58-as-hardware-prices-soar/">VGC：5 月 PS5 實付 +33%、台數 −58%</a></li><li><a href="https://nintendowire.com/news/2026/05/11/nintendo-president-states-switch-2-price-increase-wont-cover-all-cost-increases/">Nintendo Wire：漲價補不回全部成本</a></li></ul></div>
 
 <h2 id="d">Part D｜三個 Solution</h2>
 <p class="owner"><span class="who">小魚、美樂蒂</span></p>
-<p>三個 P 都要接 Part C：<strong>對象是還在觀望的人，時間是接下來的假期季到 2027/3</strong>。以下是討論起點，可以改寫。每個 P 請回答：打誰、做什麼、任天堂現在做到哪、怎麼衡量。</p>
+<p>講的順序是 Product → Place → Promotion → 總結。三個 P 都要接 Part C：<strong>對象是還在觀望的人，時間是接下來的假期季到 2027/3</strong>。以下是討論起點，可以改寫。每個 P 請回答：打誰、做什麼、任天堂現在做到哪、怎麼衡量。</p>
 
-<h3 id="promotion">Promotion：讓還在用 Switch 1 的人知道現在該升級</h3>
+<div class="duo">
+<article class="role"><p class="role-n">美樂蒂</p><p class="role-p">Product → Place（先上台）</p><ul><li>組合包、遊戲時程、門市試玩，數字最多的兩段</li><li>先決定主打遊戲與檔期，交給小魚</li><li>幕後：檢查 Part D 每個數字都有來源</li></ul></article>
+<article class="role"><p class="role-n">小魚</p><p class="role-p">Promotion → 總結（最後上台）</p><ul><li>說服與收尾：SMART、KPI、風險、討論題</li><li>把三個 P 串成一條線，主答 Q&amp;A</li><li>最後上台，可依現場時間縮放總結</li></ul></article>
+</div>
+<p><strong>兩人先對齊：</strong>對象是還在觀望的人，尤其是未升級的 Switch 1 用戶；期間 2026/11–2027/3；三個 P 用同一款主打遊戲。</p>
+<p><strong>控時做法：</strong>頁數先定死，一頁一個重點；逐字稿每分鐘約 220–250 字；稿上標出可刪的句子；彩排一律計時，剩 1 分鐘打手勢；細節數字放 Q&amp;A 備用頁。</p>
+
+<h3 id="product">Product：把最強的遊戲放進組合包</h3>
 <ul>
-<li><strong>打誰：</strong>有 Switch 1、還沒升級的人</li>
-<li><strong>初步方向：</strong>大作上市週，透過 Nintendo Account 發限時升級禮，例如 eShop 點數，公開售價不動</li>
-<li><strong>可以用的證據：</strong>古川說要維持 Switch 玩家活躍，等新作出現時再轉移；Nintendo Account 約 4 億</li>
-<li><strong>怎麼衡量：</strong>升級禮使用率、舊帳號升級數</li>
-<li><strong>要補：</strong>現有會員活動、美國舊用戶規模</li>
+<li><strong>打誰：</strong>要有明確遊戲理由才會買的人</li>
+<li><strong>初步方向：</strong>檢視現有組合包，把假期最強新作放進去。遊戲是下載碼，不用多吃記憶體</li>
+<li><strong>和 Price 的關係：</strong>不動建議售價，用組合包提高同價買到的價值</li>
+<li><strong>可以用的證據：</strong>現有組合是 Mario Kart $549.99、Sports Resort $529.99；Zelda 版主機不含遊戲。Zelda 重製版已在 11/5 上市，接下來有 Monster Hunter Wilds 12/4、Metroid Ravenous 1/28</li>
+<li><strong>怎麼衡量：</strong>組合包占比、大作上市月的 Switch 2 銷量</li>
+<li><strong>要補：</strong>Zelda 上市後的銷量反應（11 月 Circana），再決定假期主打哪一款；這款能否吸引老玩家以外的人</li>
 </ul>
-<div class="res"><h4>這段的資料連結</h4><ul><li><a href="https://www.nintendo.co.jp/ir/pdf/2026/260204e.pdf">Nintendo：2026/2 法說 Q&A，Q7 談舊用戶轉移</a></li><li><a href="https://www.shacknews.com/article/146676/nintendo-accounts-hit-400-million">Shacknews：Nintendo Account 4 億</a></li><li><a href="https://www.vgchartz.com/article/468781/switch-2-vs-switch-1-sales-comparison-in-the-us-july-2026/">VGChartz：美國 Switch 1 與 Switch 2 銷量估計</a></li><li><a href="https://www.tweaktown.com/news/110665/nintendo-price-adjusts-new-switch-2-games-in-us-region-digital-to-be-cheaper-and-physical-more-expensive/index.html">TweakTown：數位遊戲便宜 $10</a></li></ul></div>
+<div class="res"><h4>這段的資料連結</h4><ul><li><a href="https://www.gematsu.com/2026/08/nintendo-switch-2-mario-kart-world-and-nintendo-switch-sports-resort-bundles-announced">Gematsu：現有組合包內容與價格</a></li><li><a href="https://www.levelup.com/en/news/nintendo-switch-2-will-get-a-the-legend-of-zelda-ocarina-of-time-remake-edition-but-it-wont-include-the-game/">LevelUp：Zelda 版主機不含遊戲</a></li><li><a href="https://english.adnkronos.com/2026/09/09/nintendo-to-release-zelda-game-remake-for-switch-2-nov-5/">Jiji：Zelda 重製版 11/5 上市</a></li><li><a href="https://www.dexerto.com/gaming/everything-announced-at-nintendo-direct-september-2026-3407305/">Dexerto：9 月 Direct 遊戲時程</a></li><li><a href="https://www.videogameschronicle.com/news/analysis-nintendo-forecasts-switch-2-sales-slowdown-as-price-hikes-confirmed/">VGC：各遊戲銷量</a></li></ul></div>
 
 <h3 id="place">Place：讓觀望的人在門市玩到大作</h3>
 <ul>
@@ -230,15 +246,15 @@ footer{color:var(--muted);font-size:13px;border-top:1px solid var(--line);paddin
 </ul>
 <div class="res"><h4>這段的資料連結</h4><ul><li><a href="https://www.notebookcheck.net/Playable-Zelda-Ocarina-of-Time-Switch-2-demo-may-appear-at-stores-before-release-date.1435358.0.html">Notebookcheck：Target、Walmart 的 Zelda 試玩機（尚未證實可玩）</a></li><li><a href="https://nintendowire.com/news/2026/06/15/playable-star-fox-demo-featuring-corneria-stage-coming-to-retailers-across-us-and-canada/">Nintendo Wire：Star Fox 零售試玩</a></li><li><a href="https://www.nintendolife.com/news/2026/03/super-mario-bros-wonder-plus-meetup-in-bellabel-park-demo-now-available-at-switch-2-kiosks-north-america">Nintendo Life：北美試玩機更新</a></li><li><a href="https://gameinformer.com/2025/05/28/here-are-the-retailers-selling-nintendo-switch-2">Game Informer：美國販售 Switch 2 的零售商</a></li><li><a href="https://www.siliconera.com/nintendo-san-francisco-will-open-up-in-may-2025/">Siliconera：Nintendo San Francisco 門市</a></li><li><a href="https://www.notebookcheck.net/Nintendo-warns-about-Switch-2-price-increase-on-console-kiosks-contrasting-PS5-approach.1366900.0.html">Notebookcheck：試玩機上的漲價提醒</a></li></ul></div>
 
-<h3 id="product">Product：把最強的遊戲放進組合包</h3>
+<h3 id="promotion">Promotion：讓還在用 Switch 1 的人知道現在該升級</h3>
 <ul>
-<li><strong>打誰：</strong>要有明確遊戲理由才會買的人</li>
-<li><strong>初步方向：</strong>檢視現有組合包，把假期最強新作放進去。遊戲是下載碼，不用多吃記憶體</li>
-<li><strong>可以用的證據：</strong>現有組合是 Mario Kart $549.99、Sports Resort $529.99；Zelda 版主機不含遊戲。接下來有 Zelda 11/5、Monster Hunter Wilds 12/4、Metroid Ravenous 1/28</li>
-<li><strong>怎麼衡量：</strong>組合包占比、大作上市月的 Switch 2 銷量</li>
-<li><strong>要補：</strong>這些遊戲夠不夠強？是否吸引 Switch 1 老玩家以外的人？</li>
+<li><strong>打誰：</strong>有 Switch 1、還沒升級的人</li>
+<li><strong>初步方向：</strong>大作上市週，透過 Nintendo Account 發限時升級禮，例如 eShop 點數，公開售價不動。主打遊戲跟 Product 用同一款</li>
+<li><strong>可以用的證據：</strong>古川說要維持 Switch 玩家活躍，等新作出現時再轉移；Nintendo Account 約 4 億</li>
+<li><strong>怎麼衡量：</strong>升級禮使用率、舊帳號升級數</li>
+<li><strong>要補：</strong>現有會員活動、美國舊用戶規模</li>
 </ul>
-<div class="res"><h4>這段的資料連結</h4><ul><li><a href="https://www.gematsu.com/2026/08/nintendo-switch-2-mario-kart-world-and-nintendo-switch-sports-resort-bundles-announced">Gematsu：現有組合包內容與價格</a></li><li><a href="https://www.levelup.com/en/news/nintendo-switch-2-will-get-a-the-legend-of-zelda-ocarina-of-time-remake-edition-but-it-wont-include-the-game/">LevelUp：Zelda 版主機不含遊戲</a></li><li><a href="https://english.adnkronos.com/2026/09/09/nintendo-to-release-zelda-game-remake-for-switch-2-nov-5/">Jiji：Zelda 重製版 11/5 上市</a></li><li><a href="https://www.dexerto.com/gaming/everything-announced-at-nintendo-direct-september-2026-3407305/">Dexerto：9 月 Direct 遊戲時程</a></li><li><a href="https://www.videogameschronicle.com/news/analysis-nintendo-forecasts-switch-2-sales-slowdown-as-price-hikes-confirmed/">VGC：各遊戲銷量</a></li></ul></div>
+<div class="res"><h4>這段的資料連結</h4><ul><li><a href="https://www.nintendo.co.jp/ir/pdf/2026/260204e.pdf">Nintendo：2026/2 法說 Q&A，Q7 談舊用戶轉移</a></li><li><a href="https://www.shacknews.com/article/146676/nintendo-accounts-hit-400-million">Shacknews：Nintendo Account 4 億</a></li><li><a href="https://www.vgchartz.com/article/468781/switch-2-vs-switch-1-sales-comparison-in-the-us-july-2026/">VGChartz：美國 Switch 1 與 Switch 2 銷量估計</a></li><li><a href="https://www.tweaktown.com/news/110665/nintendo-price-adjusts-new-switch-2-games-in-us-region-digital-to-be-cheaper-and-physical-more-expensive/index.html">TweakTown：數位遊戲便宜 $10</a></li></ul></div>
 
 <h3 id="close">總結</h3>
 <p><strong>SMART 初稿：</strong>2026/11–2027/3，美國 Switch 2 累計銷量由 9 月的 −14% 轉為同比成長（Circana），同時全球達成 1,650 萬台預測，累計約 3,636 萬台。美國基準值要再補。</p>
